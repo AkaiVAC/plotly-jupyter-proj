@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "plotly-proj"
+name = "plotly-jupyter-proj"
 version = "0.1.0"
 description = ""
-authors = ["Arun Chithambaram <arun.chithambaram@bridgeinternationalacademies.com>"]
+authors = ["Arun Chithambaram"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
