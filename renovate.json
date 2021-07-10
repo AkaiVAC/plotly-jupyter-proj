@@ -1,5 +1,17 @@
 {
-  "extends": [
-    "config:base"
-  ]
+	"extends": ["config:base"],
+	"packageRules": [
+		{
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"matchPackagePatterns": ["lint", "prettier"],
+			"matchCurrentVersion": "!/^0/",
+			"automerge": true
+		}
+	],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true
+	},
+      "requiredStatusChecks": null
 }
