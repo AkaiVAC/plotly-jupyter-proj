@@ -138,24 +138,23 @@ testing = ["Django (<3.1)", "colorama", "docopt", "pytest (<6.0.0)"]
 
 [[package]]
 name = "jsonschema"
-version = "3.2.0"
+version = "4.0.1"
 description = "An implementation of JSON Schema validation for Python"
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
 
 [package.dependencies]
 attrs = ">=17.4.0"
-pyrsistent = ">=0.14.0"
-six = ">=1.11.0"
+pyrsistent = ">=0.14.0,<0.17.0 || >0.17.0,<0.17.1 || >0.17.1,<0.17.2 || >0.17.2"
 
 [package.extras]
-format = ["idna", "jsonpointer (>1.13)", "rfc3987", "strict-rfc3339", "webcolors"]
-format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator (>0.1.0)", "rfc3339-validator"]
+format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3987", "uri-template", "webcolors (>=1.11)"]
+format_nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=1.11)"]
 
 [[package]]
 name = "jupyter-client"
-version = "7.0.3"
+version = "7.0.5"
 description = "Jupyter protocol implementation and client libraries"
 category = "dev"
 optional = false
@@ -354,7 +353,7 @@ six = ">=1.5"
 
 [[package]]
 name = "pytz"
-version = "2021.1"
+version = "2021.3"
 description = "World timezone definitions, modern and historical"
 category = "main"
 optional = false
@@ -520,12 +519,12 @@ jedi = [
     {file = "jedi-0.18.0.tar.gz", hash = "sha256:92550a404bad8afed881a137ec9a461fed49eca661414be45059329614ed0707"},
 ]
 jsonschema = [
-    {file = "jsonschema-3.2.0-py2.py3-none-any.whl", hash = "sha256:4e5b3cf8216f577bee9ce139cbe72eca3ea4f292ec60928ff24758ce626cd163"},
-    {file = "jsonschema-3.2.0.tar.gz", hash = "sha256:c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"},
+    {file = "jsonschema-4.0.1-py3-none-any.whl", hash = "sha256:9938802041347f2c62cad2aef59e9a0826cd34584f3609db950efacb4dbf6518"},
+    {file = "jsonschema-4.0.1.tar.gz", hash = "sha256:48f4e74f8bec0c2f75e9fcfffa264e78342873e1b57e2cfeae54864cc5e9e4dd"},
 ]
 jupyter-client = [
-    {file = "jupyter_client-7.0.3-py3-none-any.whl", hash = "sha256:b07ceecb8f845f908bbd0f78bb17c0abac7b393de9d929bd92190e36c24c201e"},
-    {file = "jupyter_client-7.0.3.tar.gz", hash = "sha256:bb58e3218d74e072673948bd1e2a6bb3b65f32447b3e8c143eeca16b946ee230"},
+    {file = "jupyter_client-7.0.5-py3-none-any.whl", hash = "sha256:124a6e6979c38999d9153b1c4d1808c4c820a45066d5ed1857a5b59c04ffccb3"},
+    {file = "jupyter_client-7.0.5.tar.gz", hash = "sha256:382aca66dcaf96d7eaaa6c546d57cdf8b3b1cf5bc1f2704c58a1d8d244f1163d"},
 ]
 jupyter-core = [
     {file = "jupyter_core-4.8.1-py3-none-any.whl", hash = "sha256:8dd262ec8afae95bd512518eb003bc546b76adbf34bf99410e9accdf4be9aa3a"},
@@ -660,8 +659,8 @@ python-dateutil = [
     {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
 ]
 pytz = [
-    {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
-    {file = "pytz-2021.1.tar.gz", hash = "sha256:83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"},
+    {file = "pytz-2021.3-py2.py3-none-any.whl", hash = "sha256:3672058bc3453457b622aab7a1c3bfd5ab0bdae451512f6cf25f64ed37f5b87c"},
+    {file = "pytz-2021.3.tar.gz", hash = "sha256:acad2d8b20a1af07d4e4c9d2e9285c5ed9104354062f275f3fcd88dcef4f1326"},
 ]
 pywin32 = [
     {file = "pywin32-301-cp35-cp35m-win32.whl", hash = "sha256:93367c96e3a76dfe5003d8291ae16454ca7d84bb24d721e0b74a07610b7be4a7"},
